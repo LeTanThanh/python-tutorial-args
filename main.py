@@ -45,3 +45,14 @@ if __name__ == "__main__":
   # TypeError
 
   print(add(10, 20, 30, 40, z = 50))
+
+  # Unpacking arguments
+
+  def point(x, y):
+    return f"({x}, {y})"
+
+  a = (0, 0)
+  # point(a)
+  # TypeError
+
+  print(point(*a))
