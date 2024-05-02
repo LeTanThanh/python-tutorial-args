@@ -25,3 +25,13 @@ if __name__ == "__main__":
     return total
 
   print(add(10, 20, 30, 40))
+
+  # Introduction to the Python *args parameter
+
+  def add(*args):
+    total = 0
+    for number in args:
+      total += number
+    return total
+
+  print(add(1, 2, 3))
