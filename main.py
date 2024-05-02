@@ -35,3 +35,13 @@ if __name__ == "__main__":
     return total
 
   print(add(1, 2, 3))
+
+  # Python *args argument exhausts positional arguments
+
+  def add(x, y, *args, z):
+    return x + y + sum(args) + z
+
+  # add(10, 20, 30, 40, 50))
+  # TypeError
+
+  print(add(10, 20, 30, 40, z = 50))
